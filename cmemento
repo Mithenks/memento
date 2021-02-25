@@ -26,6 +26,7 @@ fi
 
 docker run \
 	-v /home/$(whoami)/.memento:/home/memento/.memento \
+	-v /home/$(whoami)/.gitconfig:/home/memento/.gitconfig \
 	-v ${SOURCE}:${DEST} \
 	-v ~/.ssh:/home/memento/.ssh \
 	-v $(dirname $SSH_AUTH_SOCK):$(dirname $SSH_AUTH_SOCK) \
