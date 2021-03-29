@@ -31,5 +31,5 @@ docker run \
 	-v ~/.ssh:/home/memento/.ssh \
 	-v $(dirname $SSH_AUTH_SOCK):$(dirname $SSH_AUTH_SOCK) \
 	-e SSH_AUTH_SOCK=$SSH_AUTH_SOCK \
-	-w ${WORKDIR} -it memento /bin/bash -c "memento ${CMD}"
+	-w ${WORKDIR} -it bmeme/memento:dev /bin/bash -c "memento ${CMD}"
 
